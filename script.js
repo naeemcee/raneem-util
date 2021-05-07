@@ -133,6 +133,7 @@ async function plotChart() {
             stacked: true
           }
         },
+        indexAxis: 'y',
         plugins: {
           title: {
               display: true,
