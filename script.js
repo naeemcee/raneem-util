@@ -26,8 +26,8 @@ async function fetchData() {
 async function plotChart() {
   const data = await fetchData()
 
-  var ctx = document.getElementById('chart1').getContext('2d');
-  var chart1 = new Chart(ctx, {
+  var ctx1 = document.getElementById('chart1').getContext('2d');
+  var chart1 = new Chart(ctx1, {
       type: 'bar',
       data: {
           labels: data.xLabel,
@@ -90,8 +90,8 @@ async function plotChart() {
       }
   });
 
-  var ctx = document.getElementById('chart2').getContext('2d');
-  var chart2 = new Chart(ctx, {
+  var ctx2 = document.getElementById('chart2').getContext('2d');
+  var chart2 = new Chart(ctx2, {
       type: 'bar',
       data: {
           labels: data.xLabel,
