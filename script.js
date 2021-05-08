@@ -125,14 +125,7 @@ async function plotChart() {
         }]
       },
       options: {
-        scales: {
-          x: {
-            stacked: true,
-          },
-          y: {
-            stacked: true
-          }
-        },
+        scales: {x: {stacked: true}, y: {stacked: true}},
         indexAxis: 'y',
         plugins: {
           title: {
@@ -149,8 +142,6 @@ async function plotChart() {
         }
       }
   });
-
 }
 
 plotChart()
-
