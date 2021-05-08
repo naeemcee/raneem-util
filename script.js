@@ -96,7 +96,7 @@ async function plotChart() {
       data: {
           labels: data.xLabel,
           datasets: [{
-              label: 'Solar (kWhr)',
+              label: 'Solar',
               data: data.solConsumed,
               backgroundColor: [
                 'rgba(255, 206, 86, 0.8)',
@@ -108,7 +108,7 @@ async function plotChart() {
               borderRadius: 5
           },
           {
-            label: 'KSEB (kWhr)',
+            label: 'KSEB',
             data: data.KSEBImported,
             backgroundColor: [
                 'rgba(75, 192, 192, 0.8)',
