@@ -32,7 +32,7 @@ async function plotChart() {
       data: {
           labels: data.xLabel,
           datasets: [{
-              label: 'Solar Generated (kWhr)',
+              label: 'Generated',
               data: data.solGenerated,
               backgroundColor: [
                 'rgba(255, 99, 132, 0.8)',
@@ -44,7 +44,7 @@ async function plotChart() {
               borderRadius: 5
           },
           {
-            label: 'Solar Exported (kWhr)',
+            label: 'Exported',
             data: data.solExported,
             backgroundColor: [
               'rgba(54, 162, 235, 0.8)',
@@ -73,7 +73,7 @@ async function plotChart() {
           plugins: {
             title: {
                 display: true,
-                text: 'Solar Generation vs Solar Export (kWhr)',
+                text: 'Solar Generation & Export (kWhr)',
                 padding: {
                   top: 10,
                   bottom: 5
@@ -96,7 +96,7 @@ async function plotChart() {
       data: {
           labels: data.xLabel,
           datasets: [{
-              label: 'Solar Consumption (kWhr)',
+              label: 'Solar (kWhr)',
               data: data.solConsumed,
               backgroundColor: [
                 'rgba(255, 206, 86, 0.8)',
@@ -108,7 +108,7 @@ async function plotChart() {
               borderRadius: 5
           },
           {
-            label: 'KSEB Import (kWhr)',
+            label: 'KSEB (kWhr)',
             data: data.KSEBImported,
             backgroundColor: [
                 'rgba(75, 192, 192, 0.8)',
