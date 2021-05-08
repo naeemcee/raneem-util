@@ -13,9 +13,12 @@ canvas {
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 30px;
+  width: 600px;
+
 }
 
 footer {
   text-align: center;
   margin: 10px auto;
+  color:rgb(155, 154, 154);
 }
